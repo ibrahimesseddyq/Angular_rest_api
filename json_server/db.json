@@ -1,0 +1,24 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "title": "q",
+      "price": 22
+    },
+    {
+      "id": 2,
+      "title": "wn",
+      "price": 5443
+    },
+    {
+      "id": 3,
+      "title": "n,dnsg,",
+      "price": 534
+    },
+    {
+      "id": 4,
+      "title": "huawei",
+      "price": 333
+    }
+  ]
+}

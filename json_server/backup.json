@@ -1,0 +1,24 @@
+{
+    "products": [{
+            "id": 3,
+            "title": "Huawei Y9",
+            "price": 1700
+        },
+        {
+            "id": 4,
+            "title": "Iphone 12",
+            "price": 10000
+        },
+        {
+            "id": 5,
+            "title": "Iphone 12",
+            "price": 10000
+        },
+        {
+            "id": 6,
+            "title": "Iphone 12",
+            "price": 10000
+        }
+
+    ]
+}
