@@ -38,9 +38,9 @@
     </div>
 
     <h1 class="mt-5 mx-4">List of Products :</h1>
-    <div class=" mt-5 card-container">
-        <div class="d-flex flex-wrap inner-container" style="row-gap:20px;column-gap: 10px;">
-            <div *ngFor="let i of product;let index=index;" class="card p-5 " style="width: 19rem;">
+    <div class=" mt-5 card-container d-flex justify-content-center px-2">
+        <div class="d-flex flex-wrap  inner-container" style="row-gap:20px;column-gap: 10px;">
+            <div *ngFor="let i of product;" class="card p-5 " style="width: 19rem;">
                 <img class="card-img-top image" src="../../../assets/thumbnail.jpg" alt="Card image cap">
                 <div class="card-body ">
                     <h5 class="card-title">{{i.title}}</h5>
