@@ -32,7 +32,9 @@ export class ListComponent implements OnInit {
     this.crud.get().subscribe(product =>{
       this.product = product;
     })
+    console.log(this.product.products)
   }
+
   deletePost(id:number){
     this.crud.delete(id).subscribe(()=>{
       this.product= this.product.filter((e:any)=>e.id != id);
