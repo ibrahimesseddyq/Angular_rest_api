@@ -1,5 +1,6 @@
+import { NavbarComponent } from './../navbar/navbar.component';
 import { Iproducts } from './../../products';
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 import { CrudService } from 'src/app/services/crud.service';
 import { FormBuilder } from '@angular/forms';
 import { RouterModule } from '@angular/router';
@@ -12,6 +13,7 @@ import { RouterModule } from '@angular/router';
 export class ListComponent implements OnInit {
   product: any=[];
   lastId:number=0;
+  search :string="";
   newPost : any=this.form.group({
     id:'',
     title:'',
@@ -19,15 +21,16 @@ export class ListComponent implements OnInit {
   });
   constructor(
               private crud:CrudService,
-              private form:FormBuilder
-              ) {
+              private form:FormBuilder) {
     
    }
 
   ngOnInit(): void {
+
     this.getPosts()
 
   }
+
   getPosts(){
     this.crud.get().subscribe(product =>{
       this.product = product;
@@ -46,5 +49,6 @@ export class ListComponent implements OnInit {
     });
     this.newPost.reset();
   }
+
 
 }

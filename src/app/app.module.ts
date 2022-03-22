@@ -9,6 +9,7 @@ import { NavbarComponent } from './components/navbar/navbar.component';
 import { ListComponent } from './components/list/list.component';
 import { EditComponent } from './components/edit/edit.component';
 import { FormBuilder, FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { FilterComponent } from './components/filter/filter.component';
 
 
 @NgModule({
@@ -17,6 +18,7 @@ import { FormBuilder, FormsModule, ReactiveFormsModule } from '@angular/forms';
     NavbarComponent,
     ListComponent,
     EditComponent,
+    FilterComponent,
     
     
   ],

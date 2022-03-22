@@ -1,0 +1,10 @@
+<div *ngIf="item.length!=0" class="card p-5 " style="width: 19rem;">
+    <img class="card-img-top image" src="../../../assets/thumbnail.jpg" alt="Card image cap">
+    <div class="card-body ">
+        <h5 class="card-title">{{item[0].title}}</h5>
+        <p class="card-text text-muted">{{item[0].price | currency}} </p>
+        <a routerLink="edit/{{item.id}}" class="btn btn-primary p-1">Edit</a>
+        <button class="btn btn-danger mx-3 p-1">Delete</button>
+    </div>
+</div>
+<p *ngIf="item.length==0">No item Found with that name</p>

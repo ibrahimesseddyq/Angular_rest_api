@@ -10,6 +10,7 @@
     }
 </style>
 <div class="mt-3">
+    {{search}}
     <h1 class="mx-4">Add Product :</h1>
     <form [formGroup]="newPost" (ngSubmit)="addPost()" class="mx-5 mt-2">
         <div class="form-group">
@@ -28,7 +29,7 @@
         <!-- Button trigger modal -->
     </div>
 
-    <h1 class="mt-5 mx-4">List of Products :</h1>
+    <h1 *ngIf="product.length!=0" class="mt-5 mx-4">List of Products :</h1>
     <div class=" mt-5 card-container d-flex justify-content-center px-2">
         <div class="d-flex flex-wrap  inner-container" style="row-gap:20px;column-gap: 10px;">
             <div *ngFor="let i of product;" class="card p-5 " style="width: 19rem;">
